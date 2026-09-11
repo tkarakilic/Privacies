@@ -1,0 +1,629 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Privacy policy for the Sonar mobile game (apps.taso.sonar) - what Google AdMob collects and what the game stores on your device. / Sonar mobil oyununun gizlilik politikasi.">
+<meta name="robots" content="index, follow">
+<title>Sonar Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,600;1,6..72,400&family=Source+Sans+3:wght@400;600&family=JetBrains+Mono:wght@400;500&display=swap">
+
+<style>
+  :root {
+    --ground:  #F6F7F9;
+    --surface: #FFFFFF;
+    --raised:  #EEF1F5;
+    --ink:     #131A24;
+    --muted:   #5B6675;
+    --rule:    #DCE1E8;
+    --accent:  #9A6800;
+    --accent-soft: rgba(154, 104, 0, 0.09);
+    --shadow: 0 1px 2px rgba(19, 26, 36, .05), 0 8px 24px -16px rgba(19, 26, 36, .28);
+
+    --display: "Newsreader", Georgia, "Times New Roman", serif;
+    --body: "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    --mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --ground:  #0A0F18;
+      --surface: #101825;
+      --raised:  #16202F;
+      --ink:     #E7ECF3;
+      --muted:   #94A2B5;
+      --rule:    #1F2A3A;
+      --accent:  #FFC000;
+      --accent-soft: rgba(255, 192, 0, 0.10);
+      --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 10px 30px -18px rgba(0, 0, 0, .9);
+    }
+  }
+
+  :root[data-theme="dark"] {
+    --ground:  #0A0F18;
+    --surface: #101825;
+    --raised:  #16202F;
+    --ink:     #E7ECF3;
+    --muted:   #94A2B5;
+    --rule:    #1F2A3A;
+    --accent:  #FFC000;
+    --accent-soft: rgba(255, 192, 0, 0.10);
+    --shadow: 0 1px 2px rgba(0, 0, 0, .5), 0 10px 30px -18px rgba(0, 0, 0, .9);
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+
+  body {
+    background: var(--ground);
+    color: var(--ink);
+    font-family: var(--body);
+    font-size: 17px;
+    line-height: 1.65;
+    margin: 0;
+    padding-block: 0 72px;
+    padding-left: 20px;
+    padding-right: 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .wrap { max-width: 700px; margin: 0 auto; }
+
+  /* ---------- masthead ---------- */
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    padding-block: 56px 30px;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  .mark {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+  }
+
+  .mark svg { display: block; flex: none; }
+
+  .mark strong {
+    font-family: var(--body);
+    font-weight: 600;
+    font-size: 15px;
+    letter-spacing: .26em;
+    text-transform: uppercase;
+    color: var(--ink);
+  }
+
+  h1 {
+    font-family: var(--display);
+    font-weight: 400;
+    font-size: clamp(2.15rem, 6vw, 2.9rem);
+    line-height: 1.12;
+    letter-spacing: -0.015em;
+    margin: 0;
+    text-wrap: balance;
+  }
+
+  h1 .tr {
+    display: block;
+    font-style: italic;
+    color: var(--muted);
+    font-size: .62em;
+    margin-top: .28em;
+  }
+
+  .facts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 28px;
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  .facts div { display: flex; gap: 8px; align-items: baseline; }
+
+  .facts dt {
+    margin: 0;
+    font-size: 11.5px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+  }
+
+  .facts dd { margin: 0; color: var(--ink); font-family: var(--mono); font-size: 13px; }
+
+  /* ---------- the one thing that matters ---------- */
+  .headline {
+    margin-block: 40px 0;
+    padding: 30px 32px;
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-left: 3px solid var(--accent);
+    border-radius: 3px;
+    box-shadow: var(--shadow);
+  }
+
+  .headline p {
+    margin: 0;
+    font-family: var(--display);
+    font-size: clamp(1.25rem, 3.4vw, 1.5rem);
+    line-height: 1.4;
+  }
+
+  .headline p + p {
+    margin-top: 14px;
+    font-family: var(--body);
+    font-size: 16px;
+    color: var(--muted);
+    line-height: 1.6;
+  }
+
+  /* ---------- sections ---------- */
+  section { margin-top: 48px; }
+
+  h2 {
+    font-family: var(--display);
+    font-weight: 600;
+    font-size: 1.32rem;
+    letter-spacing: -0.01em;
+    margin: 0 0 12px;
+    text-wrap: balance;
+  }
+
+  h2 .num {
+    font-family: var(--mono);
+    font-weight: 400;
+    font-size: 12px;
+    color: var(--accent);
+    letter-spacing: 0;
+    margin-right: 12px;
+    vertical-align: 3px;
+  }
+
+  p { margin: 0 0 14px; }
+  p:last-child { margin-bottom: 0; }
+
+  a { color: var(--accent); text-underline-offset: 3px; }
+  a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  code {
+    font-family: var(--mono);
+    font-size: .86em;
+    background: var(--accent-soft);
+    color: var(--ink);
+    padding: 1px 5px;
+    border-radius: 3px;
+  }
+
+  /* ---------- storage table ---------- */
+  .scroller { overflow-x: auto; margin-top: 18px; }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 15px;
+    min-width: 460px;
+  }
+
+  th, td {
+    text-align: left;
+    padding: 11px 16px 11px 0;
+    border-bottom: 1px solid var(--rule);
+    vertical-align: top;
+  }
+
+  thead th {
+    font-size: 11.5px;
+    letter-spacing: .13em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+    border-bottom-color: var(--ink);
+    padding-bottom: 8px;
+  }
+
+  tbody td:first-child {
+    font-family: var(--mono);
+    font-size: 13px;
+    white-space: nowrap;
+    color: var(--ink);
+  }
+
+  tbody tr:last-child td { border-bottom: none; }
+
+  .after-table {
+    margin-top: 16px;
+    font-size: 15px;
+    color: var(--muted);
+  }
+
+  /* ---------- language divider ---------- */
+  .lang-break {
+    margin-top: 72px;
+    padding-top: 30px;
+    border-top: 1px solid var(--rule);
+    display: flex;
+    align-items: baseline;
+    gap: 14px;
+    flex-wrap: wrap;
+  }
+
+  .lang-break span {
+    font-size: 11.5px;
+    letter-spacing: .18em;
+    text-transform: uppercase;
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .lang-break em {
+    font-family: var(--display);
+    font-style: italic;
+    color: var(--muted);
+    font-size: 15px;
+  }
+
+  footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--rule);
+    font-size: 14px;
+    color: var(--muted);
+  }
+
+  @media (max-width: 480px) {
+    body { font-size: 16px; }
+    .headline { padding: 24px 22px; }
+    th, td { padding-right: 12px; }
+  }
+</style>
+
+<style>
+  html { color-scheme: light dark; }
+  body { margin: 0; }
+  img { max-width: 100%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="masthead">
+    <div class="mark">
+      <svg width="34" height="34" viewBox="0 0 34 34" aria-hidden="true">
+        <circle cx="17" cy="17" r="17" fill="#0C1420"></circle>
+        <circle cx="17" cy="17" r="2.6" fill="#FFC000"></circle>
+        <circle cx="17" cy="17" r="7" fill="none" stroke="#FFC000" stroke-width="1.5"></circle>
+        <path d="M 17 5.2 A 11.8 11.8 0 1 1 8.6 25.4" fill="none" stroke="#FFC000"
+              stroke-width="1.1" stroke-linecap="round" opacity="0.7"></path>
+      </svg>
+      <strong>Sonar</strong>
+    </div>
+
+    <h1>Privacy Policy<span class="tr">Gizlilik Politikası</span></h1>
+
+    <dl class="facts">
+      <div><dt>Package</dt><dd>apps.taso.sonar</dd></div>
+      <div><dt>Version</dt><dd>1.0</dd></div>
+      <div><dt>Effective</dt><dd>2026-09-10</dd></div>
+    </dl>
+  </header>
+
+  <div class="headline">
+    <p>Sonar has no accounts, no sign-in, and no analytics of its own. It does show
+       ads, and those ads collect data.</p>
+    <p>Everything the game itself saves stays on your device. Everything the ads
+       collect is listed below, in full.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Advertising</h2>
+    <p>Sonar shows ads through <strong>Google AdMob</strong>. Two kinds: a full-screen ad
+       after you lose, and — where the game offers it — an optional ad you choose to
+       watch in exchange for something in the game. You are never required to watch one.</p>
+
+    <p>To select and measure those ads, Google collects the following automatically.
+       This is Google's own published list for the version of the ad SDK used here:</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>What</th><th>Used for</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Advertising ID, app set ID</td>
+            <td>Choosing ads, limiting repeats, detecting fraud</td>
+          </tr>
+          <tr>
+            <td>IP address</td>
+            <td>Estimating your rough location — country or city, not an address</td>
+          </tr>
+          <tr>
+            <td>App interactions</td>
+            <td>App opens, taps on ads, whether a video finished</td>
+          </tr>
+          <tr>
+            <td>Diagnostics</td>
+            <td>Launch time, hangs, energy use of the ad code</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="after-table">This data is sent to Google and its advertising partners,
+      encrypted in transit. We never see it as individual data — we only see totals
+      in our AdMob dashboard, such as how many ads were shown. Google's handling of it
+      is covered by <a href="https://policies.google.com/privacy" rel="noopener">Google's
+      privacy policy</a> and by the
+      <a href="https://business.safety.google/adsservices/" rel="noopener">Google Ads
+      services list</a> of partners.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Your choices about ads</h2>
+    <p>If you are in the European Economic Area, the United Kingdom or Switzerland,
+       Sonar shows you a consent screen the first time it runs, using Google's User
+       Messaging Platform. Your answer decides whether the ads you see are personalized.
+       You can change it later from the game's settings where that option is offered.</p>
+
+    <p>On any Android device, regardless of region, you can reset or delete your
+       advertising ID and turn off ad personalization from
+       <strong>Settings → Privacy → Ads</strong>. Sonar keeps working normally either
+       way; you will simply see less relevant ads.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>What is stored on your device</h2>
+    <p>Separately from the ads, Sonar saves three small settings so the game remembers
+       where you left off. These are written to your device's own app storage and never
+       leave it.</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Key</th><th>What it holds</th><th>Why</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sonar.CurrentLevel</td>
+            <td>A number — the level you reached</td>
+            <td>So closing the game doesn't lose your progress</td>
+          </tr>
+          <tr>
+            <td>Sonar.MusicEnabled</td>
+            <td>On or off</td>
+            <td>Your music preference</td>
+          </tr>
+          <tr>
+            <td>Sonar.SoundEnabled</td>
+            <td>On or off</td>
+            <td>Your sound effects preference</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="after-table">That is the complete list of what the game itself saves. No
+      name, no email, no contacts, no photos, no precise location. Uninstalling Sonar
+      deletes all three.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Device backup</h2>
+    <p>If you have Android's automatic backup switched on, the small settings file
+       above may be copied into your own device backup along with your other apps.
+       That backup belongs to you and is handled by Google under
+       <a href="https://policies.google.com/privacy" rel="noopener">their privacy policy</a>,
+       not by us. We never receive it, and we cannot read it.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>Internet</h2>
+    <p>Sonar connects to the internet for one reason: to fetch ads. The game itself
+       sends nothing to us — we run no server and have no database. There is no
+       analytics SDK and no crash-reporting service in the app.</p>
+    <p>With no connection the game is fully playable; you simply won't see ads.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Children</h2>
+    <p>Sonar is not directed to children. Because it shows ads that collect the data
+       listed above, we ask that it be used by people old enough to consent to that
+       under the law where they live — in most places, 13 or older, and 16 in parts of
+       Europe.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Google Play</h2>
+    <p>Sonar is distributed through Google Play. Google collects its own data about
+       installs under
+       <a href="https://policies.google.com/privacy" rel="noopener">Google's privacy policy</a>.
+       That collection is outside our control and happens whether or not you open
+       the game.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Changes</h2>
+    <p>If a future version of Sonar collects anything beyond what is described here,
+       this page will be updated before that version is published, and the effective
+       date at the top will change. The Data safety section on the Google Play listing
+       is kept in step with this page.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>Contact</h2>
+    <p>Questions about this policy or about the game:
+       <a href="mailto:tkarakilic@gmail.com">tkarakilic@gmail.com</a></p>
+  </section>
+
+  <!-- ================= Türkçe ================= -->
+
+  <div class="lang-break" id="turkce">
+    <span>Türkçe</span>
+    <em>Aynı metnin Türkçesi</em>
+  </div>
+
+  <div class="headline">
+    <p>Sonar'da hesap yok, giriş yok, kendi analitiği yok. Ama reklam gösteriyor ve
+       o reklamlar veri topluyor.</p>
+    <p>Oyunun kendi kaydettiği her şey cihazınızda kalıyor. Reklamların topladığı her
+       şey ise aşağıda, eksiksiz olarak yazıyor.</p>
+  </div>
+
+  <section>
+    <h2><span class="num">01</span>Reklamlar</h2>
+    <p>Sonar reklamları <strong>Google AdMob</strong> üzerinden gösteriyor. İki tür var:
+       kaybettikten sonra çıkan tam ekran reklam ve — oyunun sunduğu yerlerde — oyun
+       içi bir karşılık için izlemeyi <em>kendinizin seçtiği</em> reklam. Hiçbirini
+       izlemek zorunda değilsiniz.</p>
+
+    <p>Bu reklamları seçmek ve ölçmek için Google aşağıdakileri otomatik olarak
+       topluyor. Bu liste, burada kullanılan reklam SDK'sı için Google'ın kendi
+       yayınladığı listedir:</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Ne</th><th>Ne için</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Reklam kimliği, app set ID</td>
+            <td>Reklam seçimi, tekrarı sınırlama, sahtecilik tespiti</td>
+          </tr>
+          <tr>
+            <td>IP adresi</td>
+            <td>Kabaca konum tahmini — ülke ya da şehir, adres değil</td>
+          </tr>
+          <tr>
+            <td>Uygulama etkileşimleri</td>
+            <td>Uygulama açılışı, reklama dokunma, videonun bitip bitmediği</td>
+          </tr>
+          <tr>
+            <td>Tanılama</td>
+            <td>Açılış süresi, takılmalar, reklam kodunun enerji tüketimi</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="after-table">Bu veriler Google'a ve reklam iş ortaklarına, aktarım
+      sırasında şifrelenerek gidiyor. Biz bunları kişi bazında hiç görmüyoruz; AdMob
+      panelinde yalnızca toplamları görüyoruz, örneğin kaç reklam gösterildiğini.
+      Google'ın bu verileri nasıl işlediği
+      <a href="https://policies.google.com/privacy" rel="noopener">Google gizlilik
+      politikasında</a> ve iş ortaklarının listesi
+      <a href="https://business.safety.google/adsservices/" rel="noopener">Google Ads
+      hizmetleri sayfasında</a> yer alıyor.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">02</span>Reklamlarla ilgili seçimleriniz</h2>
+    <p>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz Sonar ilk
+       çalıştırmada size Google'ın User Messaging Platform'unu kullanan bir rıza ekranı
+       gösteriyor. Verdiğiniz yanıt, gördüğünüz reklamların kişiselleştirilip
+       kişiselleştirilmeyeceğini belirliyor. Bu seçeneğin sunulduğu yerlerde ayarlardan
+       sonradan değiştirebilirsiniz.</p>
+
+    <p>Bölgeniz ne olursa olsun, her Android cihazda reklam kimliğinizi sıfırlayabilir
+       veya silebilir, kişiselleştirmeyi kapatabilirsiniz:
+       <strong>Ayarlar → Gizlilik → Reklamlar</strong>. Sonar her iki durumda da normal
+       çalışmaya devam eder; sadece daha az ilgili reklamlar görürsünüz.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">03</span>Cihazınızda saklananlar</h2>
+    <p>Reklamlardan bağımsız olarak Sonar, kaldığınız yeri hatırlayabilmek için üç
+       küçük ayar kaydeder. Bunlar cihazınızın kendi uygulama alanına yazılır ve oradan
+       hiç çıkmaz.</p>
+
+    <div class="scroller">
+      <table>
+        <thead>
+          <tr><th>Anahtar</th><th>Ne tutuyor</th><th>Niçin</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Sonar.CurrentLevel</td>
+            <td>Bir sayı — ulaştığınız bölüm</td>
+            <td>Oyunu kapatınca ilerlemeniz kaybolmasın</td>
+          </tr>
+          <tr>
+            <td>Sonar.MusicEnabled</td>
+            <td>Açık ya da kapalı</td>
+            <td>Müzik tercihiniz</td>
+          </tr>
+          <tr>
+            <td>Sonar.SoundEnabled</td>
+            <td>Açık ya da kapalı</td>
+            <td>Ses efekti tercihiniz</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <p class="after-table">Oyunun kendi kaydettiklerinin tam listesi bu. İsim yok,
+      e-posta yok, rehber yok, fotoğraf yok, kesin konum yok. Sonar'ı kaldırdığınızda
+      üçü de silinir.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">04</span>Cihaz yedeklemesi</h2>
+    <p>Android'in otomatik yedeklemesi açıksa, yukarıdaki küçük ayar dosyası diğer
+       uygulamalarınızla birlikte kendi cihaz yedeğinize kopyalanabilir. O yedek size
+       aittir ve bizim değil, Google'ın
+       <a href="https://policies.google.com/privacy" rel="noopener">gizlilik politikası</a>
+       kapsamındadır. Bize ulaşmaz, okuyamayız.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">05</span>İnternet</h2>
+    <p>Sonar internete tek bir sebeple bağlanıyor: reklam almak. Oyunun kendisi bize
+       hiçbir şey göndermiyor — sunucumuz yok, veritabanımız yok. Uygulamada analitik
+       kütüphanesi ve çökme raporlama servisi bulunmuyor.</p>
+    <p>Bağlantı yokken oyun tamamen oynanabilir; sadece reklam görmezsiniz.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">06</span>Çocuklar</h2>
+    <p>Sonar çocuklara yönelik bir uygulama değildir. Yukarıda listelenen verileri
+       toplayan reklamlar gösterdiği için, yaşadığınız yerdeki mevzuata göre buna rıza
+       verebilecek yaşta olan kişilerce kullanılmasını bekliyoruz — çoğu yerde 13,
+       Avrupa'nın bazı ülkelerinde 16 yaş.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">07</span>Google Play</h2>
+    <p>Sonar, Google Play üzerinden dağıtılıyor. Google, kurulum bilgilerini kendi
+       <a href="https://policies.google.com/privacy" rel="noopener">gizlilik politikası</a>
+       kapsamında topluyor. Bu toplama bizim kontrolümüz dışında ve oyunu açsanız da
+       açmasanız da gerçekleşiyor.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">08</span>Değişiklikler</h2>
+    <p>Sonar'ın ileriki bir sürümü burada anlatılanların ötesinde bir şey toplarsa, o
+       sürüm yayınlanmadan önce bu sayfa güncellenecek ve yukarıdaki yürürlük tarihi
+       değişecektir. Google Play listesindeki Veri güvenliği bölümü bu sayfayla uyumlu
+       tutuluyor.</p>
+  </section>
+
+  <section>
+    <h2><span class="num">09</span>İletişim</h2>
+    <p>Bu politika ya da oyun hakkındaki sorularınız için:
+       <a href="mailto:tkarakilic@gmail.com">tkarakilic@gmail.com</a></p>
+  </section>
+
+  <footer>
+    Sonar — apps.taso.sonar · Taso · Effective 10 September 2026 / Yürürlük 10 Eylül 2026
+  </footer>
+
+</div>
+
+</body>
+</html>
