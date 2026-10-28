@@ -1,0 +1,313 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="Privacy policy for the Point Collector 3D Android game by TASO APPS.">
+<title>Point Collector 3D Privacy Policy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=IBM+Plex+Sans:ital,wght@0,400;0,600;1,400&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+  /* Layout: one readable column, a hazard-striped header band, sections as plain headed blocks */
+  :root {
+    --bg: #f4f4f4;
+    --surface: #ffffff;
+    --ink: #343434;
+    --muted: #6a6a6a;
+    --line: #dddddd;
+    --accent: #ffc000;
+    --accent-ink: #343434;
+    --stripe-dark: #343434;
+    --font-display: "Chakra Petch", "Arial Narrow", system-ui, sans-serif;
+    --font-body: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #343434; --surface: #3e3e3e; --ink: #f2f2f2; --muted: #bdbdbd;
+      --line: #4c4c4c; --accent: #ffc000; --accent-ink: #343434; --stripe-dark: #242424;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #343434; --surface: #3e3e3e; --ink: #f2f2f2; --muted: #bdbdbd;
+    --line: #4c4c4c; --accent: #ffc000; --accent-ink: #343434; --stripe-dark: #242424;
+    color-scheme: dark;
+  }
+
+  body { background: var(--bg); color: var(--ink); font-family: var(--font-body); font-size: 16px; line-height: 1.65; }
+
+  .stripe { height: 10px; background: repeating-linear-gradient(-45deg, var(--accent) 0 14px, var(--stripe-dark) 14px 28px); }
+
+  header, main, footer {
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .wrap { max-width: 720px; margin: 0 auto; }
+
+  header { padding-block: 36px 24px; }
+  .eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: .12em; text-transform: uppercase; color: var(--muted); }
+  h1 { font-family: var(--font-display); font-weight: 700; font-size: clamp(30px, 6vw, 44px); line-height: 1.1; margin: 8px 0 12px; text-wrap: balance; }
+  .meta { display: flex; flex-wrap: wrap; gap: 6px 18px; color: var(--muted); font-size: 14px; }
+  .meta b { color: var(--ink); font-weight: 600; }
+
+  .lang { display: inline-flex; gap: 4px; margin-top: 20px; padding: 4px; border: 1px solid var(--line); border-radius: 8px; background: var(--surface); }
+  .lang button { font: 600 13px/1 var(--font-body); padding: 8px 14px; border: 0; border-radius: 5px; background: transparent; color: var(--muted); cursor: pointer; }
+  .lang button[aria-pressed="true"] { background: var(--accent); color: var(--accent-ink); }
+  .lang button:focus-visible, a:focus-visible, .copy:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  main { padding-block: 8px 48px; }
+  .summary { background: var(--surface); border: 1px solid var(--line); border-left: 4px solid var(--accent); border-radius: 6px; padding: 16px 18px; margin-bottom: 28px; }
+  .summary p { margin: 0; }
+
+  section { padding-block: 18px; border-top: 1px solid var(--line); }
+  h2 { font-family: var(--font-display); font-weight: 600; font-size: 21px; line-height: 1.3; margin: 0 0 8px; text-wrap: balance; }
+  h3 { font-size: 16px; font-weight: 600; margin: 16px 0 4px; }
+  p { margin: 0 0 10px; max-width: 65ch; }
+  ul { margin: 0 0 10px; padding-left: 20px; max-width: 65ch; }
+  li { margin-bottom: 6px; }
+  a { color: inherit; text-decoration-color: var(--accent); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+
+  .table-wrap { overflow-x: auto; margin: 8px 0 12px; }
+  table { border-collapse: collapse; width: 100%; min-width: 520px; font-size: 14px; background: var(--surface); }
+  th, td { text-align: left; vertical-align: top; padding: 9px 10px; border: 1px solid var(--line); }
+  th { font-weight: 600; background: var(--bg); }
+
+  .contact { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; margin-top: 6px; }
+  .email { font-family: var(--font-mono); font-size: 15px; background: var(--surface); border: 1px solid var(--line); border-radius: 6px; padding: 6px 10px; user-select: all; overflow-wrap: anywhere; }
+  .copy { font: 600 13px var(--font-body); padding: 7px 12px; border-radius: 6px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); cursor: pointer; }
+
+  footer { padding-block: 0 40px; color: var(--muted); font-size: 13px; }
+
+  @media (prefers-reduced-motion: no-preference) { .lang button { transition: background .15s, color .15s; } }
+</style>
+<style>
+  :root { color-scheme: light; padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  *, *::before, *::after { box-sizing: border-box; }
+  body { margin: 0; -webkit-text-size-adjust: 100%; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+
+<div class="stripe" aria-hidden="true"></div>
+
+<header>
+  <div class="wrap">
+    <div class="eyebrow">TASO APPS · Android</div>
+    <h1 data-en="Point Collector 3D Privacy Policy" data-tr="Point Collector 3D Gizlilik Politikası">Point Collector 3D Privacy Policy</h1>
+    <div class="meta">
+      <span><b data-en="Effective:" data-tr="Yürürlük:">Effective:</b> <span data-en="28 October 2026" data-tr="28 Ekim 2026">28 October 2026</span></span>
+      <span><b data-en="App ID:" data-tr="Uygulama kimliği:">App ID:</b> apps.taso.PointCollector3D</span>
+    </div>
+    <div class="lang" role="group" aria-label="Language / Dil">
+      <button type="button" id="btn-en" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" id="btn-tr" data-lang="tr" aria-pressed="false">Türkçe</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+
+    <!-- ===================== ENGLISH ===================== -->
+    <article lang="en" id="en">
+      <div class="summary">
+        <p>Point Collector 3D does not have its own servers and the developer does not collect your personal data directly. Your game progress is stored on your device and, if you sign in, in your Google Play Games account. Ads are provided by Google AdMob, which collects some device data as described below.</p>
+      </div>
+
+      <section>
+        <h2>Who we are</h2>
+        <p>Point Collector 3D ("the game") is published on Google Play by TASO APPS (Tahsin Karakılıç), Türkiye. This policy explains what data the game and the third-party services it uses handle, and the choices you have.</p>
+      </section>
+
+      <section>
+        <h2>Data stored on your device</h2>
+        <p>The game saves the following on your device only: sound, music and vibration settings, your best score, the skin you selected, unlocked skins and how many ads you have watched toward each skin. This data is not sent to the developer. It is deleted when you uninstall the game or clear its data.</p>
+      </section>
+
+      <section>
+        <h2>Google Play Games Services</h2>
+        <p>When you open the game, it signs you in to Google Play Games automatically, if your device allows it. This is used to save your progress to the cloud so it is not lost when you change or reset your phone.</p>
+        <ul>
+          <li><b>What is saved:</b> best score, unlocked skins and ad progress toward locked skins.</li>
+          <li><b>Where:</b> in the Saved Games area of your own Google account, managed by Google. The developer cannot see your Google account details.</li>
+          <li><b>Player ID:</b> Google provides the game with your Play Games player identity so it can read and write your save.</li>
+        </ul>
+        <p>You can delete this data, or your whole Play Games profile, from the Play Games app or from your Google Account. Google's handling of this data is covered by the <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google Privacy Policy</a>.</p>
+      </section>
+
+      <section>
+        <h2>Advertising (Google AdMob)</h2>
+        <p>The game shows banner, interstitial and optional rewarded ads through Google AdMob. To serve and measure ads and to prevent fraud, the Google Mobile Ads SDK collects and shares with Google:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Data</th><th>Purpose</th></tr></thead>
+            <tbody>
+              <tr><td>Device identifiers (Android advertising ID, app set ID)</td><td>Advertising, analytics, fraud prevention</td></tr>
+              <tr><td>Approximate location (estimated from IP address)</td><td>Advertising, analytics, fraud prevention</td></tr>
+              <tr><td>App interactions (app launches, taps, ad views)</td><td>Advertising, analytics, fraud prevention</td></tr>
+              <tr><td>Diagnostics (performance and SDK stability data)</td><td>Analytics</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>See <a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">How Google uses information from sites or apps that use its services</a>.</p>
+        <h3>Your ad choices</h3>
+        <ul>
+          <li>If you are in the European Economic Area, the UK or Switzerland, the game asks for your consent before personalised ads are shown. You can change your choice later with the <b>Privacy</b> button in the game's Options menu.</li>
+          <li>On Android you can reset or delete your advertising ID under Settings › Google › Ads (or Settings › Privacy › Ads, depending on your device).</li>
+          <li>Rewarded ads are always optional. You only watch them when you choose to, for example to get an extra life or unlock a skin.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Security</h2>
+        <p>All data sent by the Google services used in the game is encrypted in transit (HTTPS/TLS).</p>
+      </section>
+
+      <section>
+        <h2>Children</h2>
+        <p>The game is intended for users aged 13 and over and is not directed at children under 13. The developer does not knowingly collect personal data from children. If you believe a child has provided data, contact us and we will help remove it.</p>
+      </section>
+
+      <section>
+        <h2>Your rights</h2>
+        <p>Depending on where you live (for example under the GDPR or Türkiye's KVKK), you may have the right to access, correct or delete your data and to object to its processing. Because the developer does not hold your personal data, most requests are handled directly through Google: your Google Account, the Play Games app, and the Privacy button in the game. You can also contact us and we will help.</p>
+      </section>
+
+      <section>
+        <h2>Changes to this policy</h2>
+        <p>We may update this policy when the game changes. The new version will be published on this page with a new effective date.</p>
+      </section>
+
+      <section>
+        <h2>Contact</h2>
+        <p>Questions about this policy or your data:</p>
+        <div class="contact">
+          <span class="email" id="email-en">tkarakilic@gmail.com</span>
+          <button type="button" class="copy" id="copy-en" data-target="email-en">Copy address</button>
+        </div>
+      </section>
+    </article>
+
+    <!-- ===================== TÜRKÇE ===================== -->
+    <article lang="tr" id="tr" hidden>
+      <div class="summary">
+        <p>Point Collector 3D'nin kendi sunucusu yoktur ve geliştirici kişisel verilerinizi doğrudan toplamaz. Oyun ilerlemeniz cihazınızda ve giriş yaptıysanız Google Play Games hesabınızda saklanır. Reklamlar Google AdMob tarafından gösterilir ve AdMob aşağıda açıklanan bazı cihaz verilerini toplar.</p>
+      </div>
+
+      <section>
+        <h2>Biz kimiz</h2>
+        <p>Point Collector 3D ("oyun"), Google Play'de TASO APPS (Tahsin Karakılıç, Türkiye) tarafından yayınlanır. Bu politika, oyunun ve kullandığı üçüncü taraf hizmetlerin hangi verileri işlediğini ve sahip olduğunuz seçenekleri açıklar.</p>
+      </section>
+
+      <section>
+        <h2>Cihazınızda saklanan veriler</h2>
+        <p>Oyun şunları yalnızca cihazınızda saklar: ses, müzik ve titreşim ayarları, en yüksek skorunuz, seçtiğiniz skin, açtığınız skinler ve her skin için izlediğiniz reklam sayısı. Bu veriler geliştiriciye gönderilmez. Oyunu kaldırdığınızda veya verilerini temizlediğinizde silinir.</p>
+      </section>
+
+      <section>
+        <h2>Google Play Oyun Hizmetleri</h2>
+        <p>Oyunu açtığınızda, cihazınız izin veriyorsa Google Play Games'e otomatik giriş yapılır. Bu, telefonunuzu değiştirdiğinizde veya sıfırladığınızda ilerlemenizin kaybolmaması için buluta kaydetmek amacıyla kullanılır.</p>
+        <ul>
+          <li><b>Ne kaydedilir:</b> en yüksek skor, açılan skinler ve kilitli skinler için reklam ilerlemesi.</li>
+          <li><b>Nerede:</b> Google'ın yönettiği, kendi Google hesabınızdaki Kaydedilmiş Oyunlar alanında. Geliştirici Google hesap bilgilerinizi göremez.</li>
+          <li><b>Oyuncu kimliği:</b> Google, kaydınızı okuyup yazabilmesi için oyuna Play Games oyuncu kimliğinizi verir.</li>
+        </ul>
+        <p>Bu verileri veya tüm Play Games profilinizi Play Games uygulamasından ya da Google Hesabınızdan silebilirsiniz. Bu verilerin Google tarafından işlenmesi <a href="https://policies.google.com/privacy?hl=tr" target="_blank" rel="noopener">Google Gizlilik Politikası</a> kapsamındadır.</p>
+      </section>
+
+      <section>
+        <h2>Reklamlar (Google AdMob)</h2>
+        <p>Oyun, Google AdMob üzerinden banner, geçiş ve isteğe bağlı ödüllü reklamlar gösterir. Reklam göstermek, ölçmek ve dolandırıcılığı önlemek için Google Mobile Ads SDK şu verileri toplar ve Google ile paylaşır:</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>Veri</th><th>Amaç</th></tr></thead>
+            <tbody>
+              <tr><td>Cihaz kimlikleri (Android reklam kimliği, app set ID)</td><td>Reklam, analiz, dolandırıcılığı önleme</td></tr>
+              <tr><td>Yaklaşık konum (IP adresinden tahmin edilir)</td><td>Reklam, analiz, dolandırıcılığı önleme</td></tr>
+              <tr><td>Uygulama etkileşimleri (açılışlar, dokunmalar, reklam görüntülemeleri)</td><td>Reklam, analiz, dolandırıcılığı önleme</td></tr>
+              <tr><td>Teşhis verileri (performans ve SDK kararlılığı)</td><td>Analiz</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p>Ayrıntılar: <a href="https://policies.google.com/technologies/partner-sites?hl=tr" target="_blank" rel="noopener">Google, hizmetlerini kullanan site ve uygulamalardaki bilgileri nasıl kullanır</a>.</p>
+        <h3>Reklam tercihleriniz</h3>
+        <ul>
+          <li>Avrupa Ekonomik Alanı, Birleşik Krallık veya İsviçre'deyseniz, kişiselleştirilmiş reklamlar gösterilmeden önce oyun onayınızı ister. Seçiminizi daha sonra oyunun Options menüsündeki <b>Privacy</b> düğmesiyle değiştirebilirsiniz.</li>
+          <li>Android'de reklam kimliğinizi Ayarlar › Google › Reklamlar (cihaza göre Ayarlar › Gizlilik › Reklamlar) bölümünden sıfırlayabilir veya silebilirsiniz.</li>
+          <li>Ödüllü reklamlar her zaman isteğe bağlıdır; yalnızca siz seçtiğinizde, örneğin ekstra can almak veya skin açmak için izlenir.</li>
+        </ul>
+      </section>
+
+      <section>
+        <h2>Güvenlik</h2>
+        <p>Oyunda kullanılan Google hizmetlerinin gönderdiği tüm veriler aktarım sırasında şifrelenir (HTTPS/TLS).</p>
+      </section>
+
+      <section>
+        <h2>Çocuklar</h2>
+        <p>Oyun 13 yaş ve üzeri kullanıcılar için tasarlanmıştır ve 13 yaşından küçük çocuklara yönelik değildir. Geliştirici bilerek çocuklardan kişisel veri toplamaz. Bir çocuğun veri paylaştığını düşünüyorsanız bizimle iletişime geçin, silinmesine yardımcı olalım.</p>
+      </section>
+
+      <section>
+        <h2>Haklarınız</h2>
+        <p>Bulunduğunuz yere göre (örneğin GDPR veya KVKK kapsamında) verilerinize erişme, düzeltme, silme ve işlenmesine itiraz etme haklarınız olabilir. Geliştirici kişisel verilerinizi tutmadığı için taleplerin çoğu doğrudan Google üzerinden karşılanır: Google Hesabınız, Play Games uygulaması ve oyundaki Privacy düğmesi. Bize de yazabilirsiniz, yardımcı oluruz.</p>
+      </section>
+
+      <section>
+        <h2>Bu politikadaki değişiklikler</h2>
+        <p>Oyun değiştikçe bu politikayı güncelleyebiliriz. Yeni sürüm, yeni yürürlük tarihiyle bu sayfada yayınlanır.</p>
+      </section>
+
+      <section>
+        <h2>İletişim</h2>
+        <p>Bu politika veya verileriniz hakkındaki sorularınız için:</p>
+        <div class="contact">
+          <span class="email" id="email-tr">tkarakilic@gmail.com</span>
+          <button type="button" class="copy" id="copy-tr" data-target="email-tr">Adresi kopyala</button>
+        </div>
+      </section>
+    </article>
+
+  </div>
+</main>
+
+<footer>
+  <div class="wrap" data-en="© 2026 TASO APPS. Point Collector 3D." data-tr="© 2026 TASO APPS. Point Collector 3D.">© 2026 TASO APPS. Point Collector 3D.</div>
+</footer>
+
+<script>
+  (function () {
+    var buttons = document.querySelectorAll('.lang button');
+    function setLang(lang) {
+      document.getElementById('en').hidden = lang !== 'en';
+      document.getElementById('tr').hidden = lang !== 'tr';
+      document.documentElement.lang = lang;
+      buttons.forEach(function (b) { b.setAttribute('aria-pressed', String(b.dataset.lang === lang)); });
+      document.querySelectorAll('[data-en]').forEach(function (el) { el.textContent = el.dataset[lang]; });
+      document.title = lang === 'tr' ? 'Point Collector 3D Gizlilik Politikası' : 'Point Collector 3D Privacy Policy';
+    }
+    buttons.forEach(function (b) { b.addEventListener('click', function () { setLang(b.dataset.lang); }); });
+
+    var initial = 'en';
+    var hash = (location.hash || '').slice(1);
+    if (hash === 'tr' || hash === 'en') initial = hash;
+    else if ((navigator.language || '').toLowerCase().indexOf('tr') === 0) initial = 'tr';
+    setLang(initial);
+
+    document.querySelectorAll('.copy').forEach(function (btn) {
+      btn.addEventListener('click', function () {
+        var el = document.getElementById(btn.dataset.target);
+        var done = function () { var t = btn.textContent; btn.textContent = btn.id === 'copy-tr' ? 'Kopyalandı' : 'Copied'; setTimeout(function () { btn.textContent = t; }, 1500); };
+        var select = function () { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); };
+        try {
+          navigator.clipboard.writeText(el.textContent.trim()).then(done, select);
+        } catch (e) { select(); }
+      });
+    });
+  })();
+</script>
+</body>
+</html>
